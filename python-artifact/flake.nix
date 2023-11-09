@@ -26,7 +26,7 @@
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
-      url = "github:pythoneda-shared-artifact/shared-artifact/0.0.3?dir=shared";
+      url = "github:pythoneda-shared-artifact/shared-artifact/0.0.4?dir=shared";
     };
     pythoneda-shared-nix-flake-shared = {
       inputs.flake-utils.follows = "flake-utils";
