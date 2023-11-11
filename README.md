@@ -5,7 +5,7 @@
 ## How to run it
 
 ``` sh
-nix run 'https://github.com/pythoneda-sandbox/python-artifact-artifact/[version]?dir=domain-artifact'
+nix run 'https://github.com/pythoneda-sandbox/python-artifact-artifact/[version]?dir=python-artifact'
 ```
 
 ### Usage

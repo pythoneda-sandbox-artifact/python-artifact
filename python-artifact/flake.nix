@@ -24,17 +24,36 @@
     pythoneda-shared-artifact-shared = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
+      inputs.pythoneda-shared-git-shared.follows =
+        "pythoneda-shared-git-shared";
+      inputs.pythoneda-shared-nix-flake-shared.follows =
+        "pythoneda-shared-nix-flake-shared";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
-      url = "github:pythoneda-shared-artifact/shared-artifact/0.0.4?dir=shared";
+      inputs.pythoneda-shared-pythoneda-domain.follows =
+        "pythoneda-shared-pythoneda-domain";
+      url = "github:pythoneda-shared-artifact/shared-artifact/0.0.6?dir=shared";
     };
-    pythoneda-shared-nix-flake-shared = {
+    pythoneda-shared-git-shared = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
+      inputs.pythoneda-shared-pythoneda-domain.follows =
+        "pythoneda-shared-pythoneda-domain";
+      url = "github:pythoneda-shared-git/shared-artifact/0.0.4?dir=shared";
+    };
+    pythoneda-shared-nix-flake-shared = {
+      inputs.flake-utils.follows = "flake-utils";
+      inputs.nixos.follows = "nixos";
+      inputs.pythoneda-shared-git-shared.follows =
+        "pythoneda-shared-git-shared";
+      inputs.pythoneda-shared-pythoneda-banner.follows =
+        "pythoneda-shared-pythoneda-banner";
+      inputs.pythoneda-shared-pythoneda-domain.follows =
+        "pythoneda-shared-pythoneda-domain";
       url =
-        "github:pythoneda-shared-nix-flake/shared-artifact/0.0.4?dir=shared";
+        "github:pythoneda-shared-nix-flake/shared-artifact/0.0.5?dir=shared";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -47,7 +66,7 @@
       inputs.pythoneda-shared-pythoneda-banner.follows =
         "pythoneda-shared-pythoneda-banner";
       url =
-        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.13?dir=domain";
+        "github:pythoneda-shared-pythoneda/domain-artifact/0.0.14?dir=domain";
     };
   };
   outputs = inputs:
