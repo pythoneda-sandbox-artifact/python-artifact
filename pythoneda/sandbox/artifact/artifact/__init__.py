@@ -3,7 +3,7 @@ pythoneda/sandbox/artifact/artifact/__init__.py
 
 This file ensures pythoneda.sandbox.artifact is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-artifact-artifact
+Copyright (C) 2023-today rydnr's pythoneda-sandbox-artifact/python-artifact
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -20,4 +20,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 __path__ = __import__("pkgutil").extend_path(__path__, __name__)
 
-from .sandbox_artifact_artifact import SandboxArtifactArtifact
+from .sandbox_artifact import SandboxArtifact

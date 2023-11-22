@@ -1,9 +1,9 @@
 """
-pythoneda/sandbox/artifact/artifact/sandbox_artifact_artifact.py
+pythoneda/sandbox/artifact/artifact/sandbox_artifact.py
 
-This file declares the SandboxArtifactArtifact class.
+This file declares the SandboxArtifact class.
 
-Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-artifact-artifact
+Copyright (C) 2023-today rydnr's pythoneda-sandbox-artifact/python-artifact
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -26,14 +26,14 @@ from pythoneda.shared.nix_flake import (
 )
 
 
-class SandboxArtifactArtifact(PythonPackage):
+class SandboxArtifact(PythonPackage):
     """
-    Represents the pythoneda-sandbox/python-artifact Python package.
+    Represents the pythoneda-sandbox-artifact/python Python package.
 
     Class name: Domain
 
     Responsibilities:
-        - Model the pythoneda-sandbox/python-artifact Python package and its metadata.
+        - Model the pythoneda-sandbox-artifact/python Python package and its metadata.
 
     Collaborators:
         - pythoneda.shared.artifact.PythonPackage
@@ -41,7 +41,7 @@ class SandboxArtifactArtifact(PythonPackage):
 
     def __init__(self, repositoryFolder: str):
         """
-        Creates a new PythonPackage instance.
+        Creates a new SandboxArtifact instance.
         :param repositoryFolder: The repository folder.
         :type repositoryFolder: str
         """
@@ -53,10 +53,10 @@ class SandboxArtifactArtifact(PythonPackage):
         super().__init__(
             "rydnr",
             self.find_out_version(repositoryFolder),
-            f"https://github.com/pythoneda-sandbox/python-artifact-artifact/{version}?dir=python-artifact",
+            f"https://github.com/pythoneda-sandbox-artifact/python-artifact/{version}",
             inputs,
             templateSubfolder,
-            "Artifact space of https://github.com/pythoneda-sandbox/python-artifact-artifact",
+            "Artifact space of https://github.com/pythoneda-sandbox-artifact/python-artifact",
             self.__class__.url,
             License.from_id(
                 Gpl3.license_type(),
@@ -77,4 +77,4 @@ class SandboxArtifactArtifact(PythonPackage):
         :return: Such url.
         :rtype: str
         """
-        return "https://github.com/pythoneda-sandbox/python-artifact-artifact"
+        return "https://github.com/pythoneda-sandbox-artifact/python-artifact"

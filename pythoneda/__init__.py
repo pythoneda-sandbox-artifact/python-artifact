@@ -3,7 +3,7 @@ pythoneda/__init__.py
 
 This file ensures pythoneda is a namespace.
 
-Copyright (C) 2023-today rydnr's pythoneda-sandbox/python-artifact-artifact
+Copyright (C) 2023-today rydnr's pythoneda-sandbox-artifact/python-artifact
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

@@ -3,7 +3,7 @@ pythoneda/sandbox/artifact/artifact/infrastructure/cli/sandbox_artifact_reposito
 
 This file defines the SandboxArtifactRepositoryFolderCli.
 
-Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox/python-artifact-artifact
+Copyright (C) 2023-today rydnr's https://github.com/pythoneda-sandbox-artifact/python-artifact
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
