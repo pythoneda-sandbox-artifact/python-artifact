@@ -66,7 +66,6 @@ class LocalSandboxArtifact(LocalArtifactArtifact):
         nixos = NixosNixFlake.default()
         banner = PythonedaSharedPythonedaBannerNixFlake.default()
         inputs = [flake_utils, nixos, banner]
-        version = self.find_out_version(folder)
         super().__init__(
             "pythoneda-sandbox-python",
             self.find_out_version(folder),
