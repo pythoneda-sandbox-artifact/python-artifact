@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
 pythoneda/sandbox/artifact/artifact/infrastructure/local_sandbox_artifact.py
 

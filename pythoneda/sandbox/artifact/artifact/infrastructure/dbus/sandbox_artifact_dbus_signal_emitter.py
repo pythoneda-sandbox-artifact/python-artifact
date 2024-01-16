@@ -1,3 +1,4 @@
+# vim: set fileencoding=utf-8
 """
 pythoneda/sandbox/artifact/artifact/infrastructure/dbus/sandbox_artifact_dbus_signal_emitter.py
 
