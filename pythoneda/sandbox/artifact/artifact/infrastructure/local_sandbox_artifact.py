@@ -189,3 +189,11 @@ class LocalSandboxArtifact(LocalArtifactArtifact):
         :rtype: pythoneda.shared.artifact.artifact.events.ArtifactChangesCommitted
         """
         return await cls.instance().artifact_commit_from_ArtifactTagPushed(event)
+# vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
+# Local Variables:
+# mode: python
+# python-indent-offset: 4
+# tab-width: 4
+# indent-tabs-mode: nil
+# fill-column: 79
+# End:
