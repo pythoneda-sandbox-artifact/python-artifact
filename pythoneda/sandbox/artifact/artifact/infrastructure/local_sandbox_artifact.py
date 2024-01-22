@@ -30,13 +30,13 @@ from pythoneda.shared.artifact.artifact.events import (
 from pythoneda.shared.artifact.events import (
     TagPushed,
 )
-from pythoneda.shared.nix_flake import (
+from pythoneda.shared.nix.flake import (
     FlakeUtilsNixFlake,
     License,
     NixosNixFlake,
     PythonedaSharedPythonedaBannerNixFlake,
 )
-from pythoneda.shared.nix_flake.licenses import Gpl3
+from pythoneda.shared.nix.flake.licenses import Gpl3
 
 
 class LocalSandboxArtifact(LocalArtifactArtifact):
@@ -189,6 +189,8 @@ class LocalSandboxArtifact(LocalArtifactArtifact):
         :rtype: pythoneda.shared.artifact.artifact.events.ArtifactChangesCommitted
         """
         return await cls.instance().artifact_commit_from_ArtifactTagPushed(event)
+
+
 # vim: syntax=python ts=4 sw=4 sts=4 tw=79 sr et
 # Local Variables:
 # mode: python
